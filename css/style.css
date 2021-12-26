@@ -14,6 +14,12 @@ body {
   padding-left: 34px;
   padding-right: 72px;
   margin-bottom: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff;
 }
 .menu-button {
   padding: 0;
@@ -22,7 +28,7 @@ body {
   justify-content: space-between;
   background-color: #fff;
   width: 20px;
-  height: 30px;
+  height: 17px;
   border: none;
   margin-right: 28px;
   cursor: pointer;
@@ -89,7 +95,21 @@ body {
   border-radius: 50%;
 }
 .sidebar {
-  padding-left: 32px;
+  /* padding-left: 32px; */
+  position: fixed;
+  top: 114px;
+  left: 0;
+  height: calc(100% - 114px);
+  overflow-y: auto;
+  width: 24%; /* 12% */
+  background-color: #fff;
+}
+.content {
+  width: 100%;
+  height: 400px;
+  margin-top: 85px;
+  padding-left: 26%; /*  13% */
+  padding-top: 30px;
 }
 .nav-menu {
   margin-top: 0;
@@ -129,4 +149,117 @@ body {
   font-size: 18px;
   line-height: 23px;
   margin-bottom: 30px;
+  margin-left: 32px;
+}
+.channel {
+  position: relative;
+  margin-bottom: 50px;
+}
+.channel-title {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #19202c;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+.channel-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.channel-text {
+  margin-left: 20px;
+}
+.video-card {
+  width: 250px;
+}
+.video-thumb {
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 14px;
+  position: relative;
+}
+.thumbnail {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+}
+.video-duration {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  padding: 3px 9px;
+}
+.video-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #19202c;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.video-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000;
+  opacity: 0.24;
+}
+.video-counter {
+  display: flex;
+}
+.video-views {
+  margin-right: 5px;
+}
+.video-views:after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  background-color: #000;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.channel-button {
+  cursor: pointer;
+}
+.slider-buttons {
+  position: absolute;
+  right: 8%;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 66px;
+}
+.channel-recomended {
+  font-size: 16px;
+  line-height: 20px;
+  color: #898989;
+  margin-left: 10px;
+}
+.channel-subscription-box {
+  display: flex;
+  align-items: center;
+}
+.channel-subscription {
+  cursor: pointer;
+  padding: 11px;
+  text-decoration: none;
+  background-color: red;
+  border-radius: 25px;
+  color: #fff;
+  margin-left: 25px;
 }
